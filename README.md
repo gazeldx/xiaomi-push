@@ -41,9 +41,9 @@ require 'xiaomi-push'
 
 # 初始化
 # iOS (环境支持 :production/:sandbox)
-client = Xiaomi::Push::IOS('Fill your app secret', :production)
+client = Xiaomi::Push::IOS.new('Fill your app secret', :production)
 # Android
-client = Xiaomi::Push::Android('Fill your app secret')
+client = Xiaomi::Push::Android.new('Fill your app secret')
 
 # 消息结构
 # Hash 模式
